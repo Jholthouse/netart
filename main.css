@@ -25,10 +25,12 @@ h1 {
 body {
   background-image: none;
   background-color: none;
+/*
   border-top: 15px solid #7328FF;
   border-bottom: 15px solid #7328FF;
   border-left: 15px solid #7328FF;
   border-right: 15px solid #7328FF;
+  */
 }
 
 a {
@@ -39,6 +41,44 @@ a {
 /* Centers images */
 
 img {
-  display: block;
-  margin: 0px auto;
+  display: grid;
+  margin: 50px;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
+}
+
+Create four equal columns that sits next to each other
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+/*
+Responsive layout - makes a two column-layout instead of four columns
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+Responsive layout - makes the two columns stack on top of each other instead of next to each other
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+*/
