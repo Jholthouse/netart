@@ -1,45 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+
 body {
   margin: 30px auto;
   max-width: 1000px;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Bitter', serif;
   line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
-}
-
-body{
-  background-image: url("images/background.jpg");
-  background-repeat: no-repeat;
+  align-content: center;
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 h1 {
-  color: Black;
+  color: #FFFFFF;
   padding: 20px 0px 10px 0px;
-  text-align: center;
+  text-decoration: underline none;
+  text-decoration-style: none;
+  text-shadow: 2px 2px none;
+  transform: rotate(0deg);
 }
 
-.box {
-  background-color: #2E8B57;
-  width: 600px;
-  border: 5px solid black;
-  padding: 25px;
-  margin: 25px auto;
+body {
+  background-image: none;
+  background-color: none;
+/*
+  border-top: 15px solid #7328FF;
+  border-bottom: 15px solid #7328FF;
+  border-left: 15px solid #7328FF;
+  border-right: 15px solid #7328FF;
+  */
 }
 
 a {
-  color: black;
-  text-decoration: underline;
-  text-decoration-color: #7FFF00;
+  color: #7328FF;
+  text-decoration: none;
 }
 
-a:visited {
-  color: black;
-  text-decoration: underline;
-  text-decoration-color: #7FFF00;
+/* Centers images */
+
+img {
+  display: grid;
+  margin: 50px;
 }
 
-a:hover {
-  color: #7FFF00;
-  text-decoration: underline;
-  text-decoration-color: black;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
 }
+
+Create four equal columns that sits next to each other
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+/*
+Responsive layout - makes a two column-layout instead of four columns
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+Responsive layout - makes the two columns stack on top of each other instead of next to each other
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+*/
