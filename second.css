@@ -5,15 +5,16 @@ body {
   line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
+  color: white;
 }
 
 body{
-  background-image: url("images/background.jpg");
+  background-image: url("images/rain.jpg");
   background-repeat: no-repeat;
 }
 
 h1 {
-  color: Black;
+  color: white;
   padding: 20px 0px 10px 0px;
   text-align: center;
 }
@@ -27,13 +28,13 @@ h1 {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: underline;
   text-decoration-color: #7FFF00;
 }
 
 a:visited {
-  color: black;
+  color: white;
   text-decoration: underline;
   text-decoration-color: #7FFF00;
 }
